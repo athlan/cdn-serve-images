@@ -6,3 +6,10 @@ parameters:
     imagine_source_root:  %kernel.root_dir%/../web/isource
     imagine_web_root:     %kernel.root_dir%/../web
     imagine_cache_prefix: im/v1
+    imagine_driver:       gd
+    
+    # example
+    imagine_filters:
+        120x90-crop:
+            type:    thumbnail
+            options: { size: [120, 90], mode: outbound }
