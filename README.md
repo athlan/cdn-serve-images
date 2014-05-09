@@ -36,6 +36,10 @@ Clone the project
 ```
 git clone git@github.com:athlan/cdn-serve-images.git ./
 composer install
+
+chmod 777 ./app/cache
+chmod 777 ./app/logs
+chmod 777 -R im/
 ```
 
 Configure in `parameters.yml`:
@@ -52,6 +56,12 @@ imagine_filters:
     120x90-crop:
         type:    thumbnail
         options: { size: [120, 90], mode: outbound }
+```
+
+After configuration run:
+
+```
+php app/console cache:clear -e prod
 ```
 
 ## Usage
