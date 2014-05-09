@@ -15,3 +15,7 @@
 /.settings
 /.project
 /.buildpath
+
+# uploads
+/web/im/*
+!web/im/.gitkeep

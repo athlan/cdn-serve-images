@@ -14,6 +14,9 @@ class AppKernel extends Kernel
             new Symfony\Bundle\MonologBundle\MonologBundle(),
             new Symfony\Bundle\AsseticBundle\AsseticBundle(),
             new Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
+        		
+        	new Avalanche\Bundle\ImagineBundle\AvalancheImagineBundle(),
+        	
             new Selly\CdnServeImages\TestBundle\SellyCdnServeImagesTestBundle(),
         );
 

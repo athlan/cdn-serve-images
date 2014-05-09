@@ -67,3 +67,13 @@ twig:
 #    username:  "%mailer_user%"
 #    password:  "%mailer_password%"
 #    spool:     { type: memory }
+
+avalanche_imagine:
+    source_root:  %imagine_source_root%
+    web_root:     %imagine_web_root%
+    cache_prefix: %imagine_cache_prefix%
+    driver:       gd
+    filters:
+        120x90-crop:
+            type:    thumbnail
+            options: { size: [120, 90], mode: outbound }

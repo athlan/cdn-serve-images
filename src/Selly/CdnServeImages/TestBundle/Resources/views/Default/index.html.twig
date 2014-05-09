@@ -1,1 +1,5 @@
-Hello {{ name }}!
+Test image:
+<br />
+{{ '/relative/path/to/image.jpg' | apply_filter('my_thumb') }}
+<br />
+<img src="{{ './apple-touch-icon.png' | apply_filter('my_thumb') }}" alt="" />
