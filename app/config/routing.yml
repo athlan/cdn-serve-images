@@ -1,0 +1,7 @@
+selly_cdn_serve_images_test:
+    resource: "@SellyCdnServeImagesTestBundle/Resources/config/routing.yml"
+    prefix:   /
+
+#_imagine:
+#    resource: .
+#    type:     imagine
